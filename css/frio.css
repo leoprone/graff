@@ -1,0 +1,175 @@
+
+      /*frio.html*/
+
+      .btn-abrir-tapa-gs{
+        position: relative;
+        z-index: 200;
+      }
+
+.btn-video-frio{
+  color: red;
+  position: absolute;
+  z-index: 30;
+  top: 75%;
+  left: 40%;
+  font-size: 7vw;
+  width: 16vw;
+  height: 10vw;
+  border-radius: 20%;
+  
+  background-color: rgb(247, 238, 238, 0);
+  transition: 3s;
+}
+.btn-video-frio-play{
+  transition: 3s;
+  position: fixed;
+  bottom: 0;
+  left: 3%;
+  font-size: 5vw;
+  width: 12vw;
+  height: 8vw;
+  background-color: rgb(238, 229, 229, 0);
+  
+  border-radius: 30%;
+}
+
+
+.canciones-frio {
+  color: white;
+  margin-top: 10%;
+  text-align: center;
+}
+     
+.gs-body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 200, 160);
+  
+}
+
+.frio{
+  width: 100vw;
+  height: 100vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0rem 5rem 5rem white;
+  overflow-x: hidden;
+
+}
+
+
+.video-frio{
+  
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  transition: filter 1.5s linear;
+  top: 25%;
+  box-shadow: 1rem 1rem 3rem 3rem rgb(250, 246, 246, 0.8);
+  
+}
+
+
+.video-frio>*{
+ position: absolute;
+ width: 100%;      
+ height: 100%;
+ 
+ 
+ filter: sepia(0);
+ z-index: 1;
+ }
+
+
+ .opacity-0{
+   transition: 3s;
+   opacity: 0;
+ }
+
+ .opacity-1{
+   transition: opacity 3s linear;
+   opacity: 1;
+ }
+
+ @keyframes opacityinicial{
+   0%{
+     opacity: 0;
+   }
+   100%{
+     opacity: 1;
+   }
+ }
+
+
+ @keyframes humo{
+   0%{
+     transform: translatex(-140vw);
+   }
+   50%{
+    transform: translatex(-140vw);
+  }
+  70%{
+    transform: translatex(170vw);
+  }
+  100%{
+    transform: translatex(170vw);
+  }
+ }
+
+.humo-arriba-frio{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  
+  box-shadow: 0rem 0rem 1rem 1rem white;
+  top: -35%;
+  position: relative;
+  
+  z-index: 10;
+  
+  
+}
+
+
+
+.humo-abajo-frio{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  
+  box-shadow: 0rem 0rem 1.5rem 1rem white;
+  top: 16%;
+  position: relative;
+  
+  z-index: 10;
+  
+  
+}
+
+
+.volver{
+  position: fixed;
+  z-index: 101;
+}
+
+.volver a{
+  text-decoration: none;
+  background-color: rgb(10, 10, 10, 0.3);
+        width: 16vw;
+        height: 8vw;
+        font-size: 5vw;
+        font-weight: bold;
+        border-radius: 20%;
+        margin-right: 10%;
+        color: rgb(189, 183, 183);
+        display: block;
+        position: fixed;
+        bottom: 12%;
+        right: 3%;
+        padding-top: 1.75%;
+        padding-left: 1%;
+        z-index: 100;
+}
+
+
